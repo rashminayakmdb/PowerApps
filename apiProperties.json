@@ -1,0 +1,21 @@
+{
+    "properties": {
+      "connectionParameters": {
+        "api_key": {
+          "type": " ",
+          "uiDefinition": {
+            "displayName": "API KEY",
+            "description": "Please get your API key from the Atlas cluster(https://account.mongodb.com)",
+            "tooltip": "Provide your API token",
+            "constraints": {
+              "required": "true"
+            }
+          }
+        }
+      },
+      "iconBrandColor": "#000000",
+      "capabilities": [],
+      "publisher": "MongoDB",
+      "stackOwner": "MongoDB"
+    }
+  }

@@ -1,0 +1,259 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "DataAPI",
+      "description": "DataAPI"
+    },
+    "host": "data.mongodb-api.com",
+    "basePath": "/",
+    "schemes": [
+      "https"
+    ],
+    "consumes": [],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/app/yourDataAPIAppID/endpoint/data/beta/action/findOne": {
+        "post": {
+          "summary": "Find a Single Document",
+          "description": "Find a Single Document",
+          "operationId": "FindASingleDocument",
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "in": "header",
+              "required": true,
+              "type": "string",
+              "default": "application/json",
+              "description": "Content-Type"
+            },
+            {
+              "name": "api-key",
+              "in": "header",
+              "required": true,
+              "type": "string",
+              "description": "api-key"
+            },
+            {
+              "name": "Access-Control-Request-Headers",
+              "in": "header",
+              "required": true,
+              "type": "string",
+              "default": "*",
+              "description": "Access-Control-Request-Headers"
+            },
+            {
+              "name": "body",
+              "in": "body",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "dataSource": {
+                    "type": "object",
+                    "properties": {},
+                    "description": "dataSource"
+                  },
+                  "database": {
+                    "type": "object",
+                    "properties": {},
+                    "description": "database"
+                  },
+                  "collection": {
+                    "type": "object",
+                    "properties": {},
+                    "description": "collection"
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {},
+                    "description": "filter"
+                  }
+                },
+                "default": {
+                  "dataSource": {},
+                  "database": {},
+                  "collection": {},
+                  "filter": {}
+                }
+              },
+              "required": true
+            }
+          ],
+          "responses": {
+            "default": {
+              "description": "default",
+              "schema": {}
+            }
+          }
+        }
+      },
+      "/app/yourDataAPIAppID/endpoint/data/beta/action/insertOne": {
+        "post": {
+          "summary": "Insert a Single Document",
+          "description": "Insert a Single Document",
+          "operationId": "InsertASingleDocument",
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "in": "header",
+              "required": true,
+              "type": "string",
+              "default": "application/json",
+              "description": "Content-Type"
+            },
+            {
+              "name": "api-key",
+              "in": "header",
+              "required": true,
+              "type": "string",
+              "default": "",
+              "description": "api-key"
+            },
+            {
+              "name": "Access-Control-Request-Headers",
+              "in": "header",
+              "required": true,
+              "type": "string",
+              "default": "*",
+              "description": "Access-Control-Request-Headers"
+            },
+            {
+              "name": "body",
+              "in": "body",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "dataSource": {
+                    "type": "object",
+                    "properties": {},
+                    "description": "dataSource"
+                  },
+                  "database": {
+                    "type": "object",
+                    "properties": {},
+                    "description": "database"
+                  },
+                  "collection": {
+                    "type": "object",
+                    "properties": {},
+                    "description": "collection"
+                  },
+                  "document": {
+                    "type": "object",
+                    "properties": {},
+                    "description": "document"
+                  }
+                },
+                "default": {
+                  "dataSource": {},
+                  "database": {},
+                  "collection": {},
+                  "document": {}
+                }
+              },
+              "required": true
+            }
+          ],
+          "responses": {
+            "default": {
+              "description": "default",
+              "schema": {}
+            }
+          }
+        }
+      },
+      "/app/yourDataAPIAppID/endpoint/data/beta/action/deleteOne": {
+        "post": {
+          "summary": "Delete a Single Document",
+          "description": "Delete a Single Document",
+          "operationId": "DeleteASingleDocument",
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "in": "header",
+              "required": true,
+              "type": "string",
+              "default": "application/json",
+              "description": "Content-Type"
+            },
+            {
+              "name": "Access-Control-Request-Headers",
+              "in": "header",
+              "required": true,
+              "type": "string",
+              "default": "*",
+              "description": "Access-Control-Request-Headers"
+            },
+            {
+              "name": "api-key",
+              "in": "header",
+              "required": true,
+              "type": "string",
+              "default": "",
+              "description": "api-key"
+            },
+            {
+              "name": "body",
+              "in": "body",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "dataSource": {
+                    "type": "object",
+                    "properties": {},
+                    "description": "dataSource"
+                  },
+                  "database": {
+                    "type": "object",
+                    "properties": {},
+                    "description": "database"
+                  },
+                  "collection": {
+                    "type": "object",
+                    "properties": {},
+                    "description": "collection"
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {},
+                    "description": "filter"
+                  }
+                },
+                "default": {
+                  "dataSource": {},
+                  "database": {},
+                  "collection": {},
+                  "filter": {}
+                }
+              },
+              "required": true
+            }
+          ],
+          "responses": {
+            "default": {
+              "description": "default",
+              "schema": {}
+            }
+          }
+        }
+      }
+    },
+    "definitions": {},
+    "parameters": {},
+    "responses": {},
+    "securityDefinitions": {
+      "API Key": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "api-key"
+      }
+    },
+    "security": [
+      {
+        "API Key": []
+      }
+    ],
+    "tags": []
+  }
