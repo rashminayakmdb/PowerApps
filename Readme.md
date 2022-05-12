@@ -26,9 +26,3 @@ For authentication, you need to use an API token. To get a token, follow the ste
         You can now see and copy your new API key for the first and only time. Once you close the modal, Atlas will never expose the value again.
 3. Send a Data API Request
         You include your Data API key when you call action endpoints that read and write documents in MongoDB. 
-
-## Known Issues and Limitations
-Required. Include any known issues and limitations a user may encounter.
-
-## Deployment Instructions
-Required. Add instructions on how to deploy this connector as custom connector.
