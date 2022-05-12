@@ -26,6 +26,3 @@ For authentication, you need to use an API Key. To get a API key, follow the ste
         The Data API uses project-level API keys to manage access and prevent unauthorized requests. Every request must include a valid Data API key.A Data API key grants full read and write access every collection in a cluster and can access any enabled cluster in the project.
         Click Create API Key, enter a unique name for the new key, and then click Create API Key.
         You can now see and copy your new API key for the first and only time. Once you close the modal, Atlas will never expose the value again.
-3. Send a Data API Request
-
-        You include your Data API key when you call action endpoints that read and write documents in MongoDB. 
