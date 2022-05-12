@@ -14,7 +14,7 @@ You will need the following to proceed:
 Perform CRUD operayions and aggregations on your data in minutes
 
 ## Obtaining Credentials
-For authentication, you need to use an API token. To get a token, follow the steps in ## Pre-requisites for Using the Connector
+For authentication, you need to use an API Key. To get a API key, follow the steps provided in the below section
 
 ## Pre-requisites for Using the Connector
 1. Enable the Data API
